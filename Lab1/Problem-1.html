@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Problem-1.css">
+</head>
+<body>
+<div id="main-div">
+    <div id="list-div">
+        <ul id="listItem">
+            <li>text_to_be_inserted</li>
+        </ul>
+    </div>
+
+    <div id="insert-div" class="header">
+      <input type="text" id="myInput" placeholder="Fill me">
+      <button  onclick="newElement()" type="button">Insert</button>
+    </div>
+</div>
+
+<script>
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("listItem").appendChild(li);
+  }
+
+}
+</script>
+
+</body>
+</html>
