@@ -1,57 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <title></title>
-    <link rel='stylesheet' href='Problem-3.css'>
+    <link rel="stylesheet" href="Problem-3.css">
 </head>
 <body>
-<header>
-    The Note Machine
-    <div id='color-select'>
-        <div class='color-box white'></div>
-        <div class='color-box orange'></div>
-        <div class='color-box banana'></div>
-        <div class='color-box honeydew'></div>
-        <div class='color-box flora'></div>
-        <div class='color-box aqua'></div>
-        <div class='color-box ice'></div>
-        <div class='color-box sky'></div>
-        <div class='color-box orchid'></div>
-        <div class='color-box lavendar'></div>
-        <div class='color-box pink'></div>
-    </div>
-</header>
-<main>
-    <div class="headers">
-        <div id="list-head">
-            <b>Your Notes</b> <i>(click to edit/delete)</i>
-        </div>
-        <div id="note-head">
-            <b>Your Notepad</b>
-            <span id="edit-mode" class="no-display">
-            <i> (edit mode) </i>
-          </span>
-        </div>
-    </div>
-    <noteList>
-        <div id='listed'>
-        </div>
-    </noteList>
-    <notepad>
-        <div id="note-title">
-            <input id="title-field" type="text" placeholder="title your note">
-        </div>
-        <div id="note-body">
-            <textarea id="body-field"></textarea>
-        </div>
-    </notepad>
-</main>
-<footer>
-    <button id="btn-save">Save</button>
-    <button id="btn-delete">Delete / Clear </button>
-</footer>
-</body>
-<script type='text/javascript' src='Problem-3.js'></script>
-</html>
 
+<div class="grid">
+    <div class="one">
+        <div id="main-div">
+            <div id="list-div">
+                <ul id="listItem">
+                    <li>text_to_be_inserted</li>
+                </ul>
+            </div>
+
+            <div id="CRUD">
+                <div id="insert-div" class="header">
+                    <input type="text" id="myInput" placeholder="Add note">
+                    <button  onclick="newElement()" type="button">Add</button>
+                    <button  onclick="newElement()" type="save">Save</button>
+                    <button  onclick="newElement()" type="edit">Edit</button>
+                    <button  onclick="newElement()" type="button">delete</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<script>
+    function newElement() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("myInput").value;
+        var t = document.createTextNode(inputValue);
+        li.appendChild(t);
+        if (inputValue === '') {
+            alert("You must write something!");
+        } else {
+            document.getElementById("listItem").appendChild(li);
+        }
+
+    }
+</script>
+
+</body>
+</html>

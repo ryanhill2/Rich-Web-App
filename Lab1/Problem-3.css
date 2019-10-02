@@ -1,170 +1,51 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
-
-@ryanhill2
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-1
-36mikeduin/note-app
-Code Issues 0 Pull requests 0 Projects 0 Wiki Security Insights
-note-app/style.css
-@mikeduin mikeduin finished app
-57f2d42 on Mar 13, 2017
-199 lines (163 sloc)  2.55 KB
-
-header {
-    text-align: left;
-    font-weight: 800;
-    font-size: 28px;
-    border-bottom: solid 3px #DEDEDE;
-    display: flex;
-    justify-content: space-between;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-footer {
-    display: flex;
-    flex-flow: row-reverse;
-    padding: 5px 20px;
+.grid div:nth-child(even){
+    background-color: green;
+    border-style: solid;
+    border-width: 1px;
 }
 
-.headers {
-    margin-top: 20px;
-    margin-bottom: -10px;
-    font-size: 20px;
+.grid div:nth-child(odd){
+    background-color: gold;
+    border-style: solid;
+    border-width: 1px;
 }
 
-#list-head {
-    margin-left: 2.5%;
-    width: 30.5%;
-    display: inline-block;
+.one{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.two{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#main-div{
+    background-color: gray;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     text-align: center;
+    padding: 5% 5% 5% 5%;
+    margin: 5% 5% 5% 5%;
+    border-style: solid;
+    border-width: 5px;
+}
+#insert-div{
+    border-style: solid;
+    border-width: 5px;
 }
 
-#note-head {
-    width: 60%;
-    margin-left: 5%;
-    display: inline-block;
-    text-align: center;
+#CRUD{
+    background-color: pink;
+}
+#list-div{
+    float: left;
+}
+#insert-div{
+    float: right;
 }
 
-noteList {
-    margin-top: 20px;
-    display: inline-block;
-    margin-left: 2.5%;
-    width: 30.5%;
-    height: 400px;
-    overflow: scroll;
-    border: solid 3px #929292;
-    border-radius: 5px;
-    background-color: #DEDEDE;
-}
-
-.within-list {
-    cursor: pointer;
-}
-
-.list-title {
-    font-weight: 600;
-    font-size: 20px;
-    padding: 5px 5px 0 5px;
-}
-
-.list-date {
-    font-weight: 200;
-    font-style: italic;
-    font-size: 12px;
-    padding: 0 5px 0 5px;
-}
-
-.list-text {
-    padding: 0 5px 5px 5px;
-    border-bottom: solid 1px black;
-}
-
-notePad {
-    display: inline-block;
-    border: solid 3px black;
-    border-radius: 10px;
-    height: 400px;
-    overflow: scroll;
-    width: 60%;
-    margin-left: 5%;
-    margin-top: 0;
-}
-
-#note-title {
-    font-size: 24px;
-    padding: 0 0 5px 5px;
-    border-bottom: solid 2px #DEDEDE;
-}
-
-#note-body {
-    padding: 5px;
-}
-
-#body-field, #title-field {
-    width: 100%;
-    border: none;
-    outline: none;
-    resize: none;
-}
-
-#title-field {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-#body-field {
-    font-size: 14px;
-    font-weight: 500;
-    height: 400px;
-}
-
-#color-select {
-    display: flex;
-    flex-flow: row-reverse nowrap;
-    padding: 5px 10px 0 0;
-}
-
-.color-box {
-    border: solid 2px #929292;
-    height: 10px;
-    width: 10px;
-    margin-left: 5px;
-}
-
-.display {
-    display: visible;
-}
-
-.no-display {
-    display: none;
-}
-
-button {
-    margin: 5px;
-    border: solid 3px grey;
-    border-radius: 10%;
-    font-size: 22px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #DEDEDE;
-}
-
-button:hover, .color-box:hover {
-    cursor: pointer;
-}
-
-#listed:nth-child(odd):hover {
-    cursor: pointer;
-}
 
 #btn-save {
     background-color: #2F5032;
@@ -179,39 +60,39 @@ button:hover, .color-box:hover {
 }
 
 .orange {
-    background-color: #FFD37F;
+    background-color: orange;
 }
 
-.banana {
-    background-color: #FFFA81;
+.yellow {
+    background-color: yellow;
 }
 
-.honeydew {
-    background-color: #D5FA80;
+.lightgreen {
+    background-color: lightgreen;
 }
 
-.flora {
-    background-color: #78F87F;
+.green {
+    background-color: green;
 }
 
-.aqua {
-    background-color: #79FBD6;
+.lightblue {
+    background-color: lightblue;
 }
 
-.ice {
-    background-color: #79FDFE;
+.blue {
+    background-color: blue;
 }
 
-.sky {
-    background-color: #7AD6FD;
+.darkblue {
+    background-color: darkblue;
 }
 
-.orchid {
-    background-color: #7B84FC;
+.purple {
+    background-color: purple;
 }
 
-.lavendar {
-    background-color: #D687FC;
+.red {
+    background-color: darkred;
 }
 
 .pink {

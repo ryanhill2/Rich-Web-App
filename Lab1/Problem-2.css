@@ -5,10 +5,14 @@
 
 .grid div:nth-child(even){
     background-color: green;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .grid div:nth-child(odd){
     background-color: gold;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .one{
@@ -36,7 +40,6 @@
     .grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-columns: 50%;
         grid-auto-rows: 1fr 1fr;
     }
 }
@@ -45,7 +48,6 @@
     .grid{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-columns: 25%;
         grid-auto-rows: 1fr 1fr 1fr 1fr;
     }
 }
